@@ -22,4 +22,4 @@ jobs:
       - checkout
       - run: curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s -- -b ./bin
       - run: go get -u github.com/mgechev/revive
-      - run: revive -config revive.toml ./... | reviewdog -diff="git diff master" -reporter=github-pr-review
+      - run: revive -config revive.toml ./... 2>&1 | ./bin/reviewdog -diff="git diff master" -reporter=github-pr-review
