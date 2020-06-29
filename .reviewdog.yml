@@ -1,0 +1,6 @@
+runner:
+  revive:
+    cmd: revive ./...
+    errorformat:
+      - "%f:%l:%c: %m"
+    level: warning
