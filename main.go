@@ -8,10 +8,6 @@ type User struct {
 }
 
 func main()  {
-	u := User{
-		A: "",
-		B: 0,
-	}
-	fmt.Println("hello reviewdog")
-	fmt.Println(u.A)
+	foo := NewFoo("foo")
+	fmt.Println(foo.Greet())
 }
