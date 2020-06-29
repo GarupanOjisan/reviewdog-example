@@ -2,17 +2,17 @@ package main
 
 import "fmt"
 
-// Foo
+// Foo just foo
 type Foo struct {
 	Message string
 }
 
-// NewFoo
+// NewFoo creating a new foo
 func NewFoo(message string) *Foo {
 	return &Foo{Message: message}
 }
 
-// Greet
+// Greet by foo
 func (f *Foo) Greet() string {
 	return fmt.Sprintf("Hello %s", f.Message)
 }
